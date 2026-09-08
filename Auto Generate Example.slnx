@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="AutoGenerateArchitecture2/AutoGenerateArchitecture.csproj">
+    <Deploy />
+  </Project>
+</Solution>

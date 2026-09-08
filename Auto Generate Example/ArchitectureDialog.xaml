@@ -1,0 +1,36 @@
+﻿<!-- UI/ArchitectureDialog.xaml -->
+<Window x:Class="ArchitectureScaffolder.UI.ArchitectureDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="انتخاب و ایجاد معماری پروژه" Height="420" Width="520"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize" FontFamily="Segoe UI">
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="معماری مورد نظر خود را انتخاب کنید:" FontSize="14" FontWeight="Bold" Margin="0,0,0,10"/>
+
+        <!-- Root Namespace -->
+        <StackPanel Grid.Row="1" Margin="0,0,0,10">
+            <TextBlock Text="Root Namespace:" Margin="0,0,0,4"/>
+            <TextBox x:Name="TxtNamespace" Height="26" VerticalContentAlignment="Center"/>
+        </StackPanel>
+
+        <!-- Architectures List -->
+        <ListBox Grid.Row="2" x:Name="ListArchitectures" DisplayMemberPath="Name" SelectionChanged="ListArchitectures_SelectionChanged"/>
+
+        <!-- Description Box -->
+        <TextBlock Grid.Row="3" x:Name="TxtDescription" Margin="0,8,0,12" TextWrapping="Wrap" Foreground="#555" Height="40"/>
+
+        <!-- Buttons -->
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="تولید ساختار" Width="100" Height="30" Margin="0,0,10,0" IsDefault="True" Click="BtnGenerate_Click"/>
+            <Button Content="انصراف" Width="80" Height="30" IsCancel="True"/>
+        </StackPanel>
+    </Grid>
+</Window>

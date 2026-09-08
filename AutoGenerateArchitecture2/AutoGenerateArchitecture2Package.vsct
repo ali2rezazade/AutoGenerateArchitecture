@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"
+              xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<Extern href="stdidcmd.h"/>
+	<Extern href="vsshlids.h"/>
+
+	<Commands package="guidAutoGenerateArchitecture2Package">
+		<Groups>
+			<Group guid="guidAutoGenerateArchitecture2PackageCmdSet" id="MyMenuGroup" priority="0x0600">
+				<Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
+			</Group>
+		</Groups>
+
+		<Buttons>
+			<Button guid="guidAutoGenerateArchitecture2PackageCmdSet"
+					id="ApplyArchitectureCommandId"
+					priority="0x0100"
+					type="Button">
+				<Parent guid="guidAutoGenerateArchitecture2PackageCmdSet" id="MyMenuGroup" />
+				<Strings>
+					<ButtonText>Apply Architecture</ButtonText>
+				</Strings>
+			</Button>
+		</Buttons>
+	</Commands>
+
+	<Symbols>
+		<GuidSymbol name="guidAutoGenerateArchitecture2Package" value="{6cc1c4e4-474a-4059-b390-ed12e7ffcc3b}" />
+
+		<GuidSymbol name="guidAutoGenerateArchitecture2PackageCmdSet" value="{58feb0b8-b4ec-4845-ac7e-5baabfb0831e}">
+			<IDSymbol name="MyMenuGroup" value="0x1020" />
+			<IDSymbol name="ApplyArchitectureCommandId" value="0x0100" />
+		</GuidSymbol>
+	</Symbols>
+</CommandTable>

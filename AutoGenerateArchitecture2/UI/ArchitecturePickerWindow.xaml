@@ -1,0 +1,33 @@
+﻿<Window x:Class="ArchitectureScaffolder.UI.ArchitectureDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="انتخاب معماری پروژه دات‌نت" Height="380" Width="500"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+        Background="#F6F7F9" FontFamily="Segoe UI">
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="معماری مورد نظر را برای تولید ساختار و فایل‌ها انتخاب کنید:" 
+                   FontSize="13" FontWeight="SemiBold" Margin="0,0,0,10" Foreground="#222"/>
+
+        <ListBox Grid.Row="1" x:Name="ListArchitectures" DisplayMemberPath="Name" 
+                 SelectionChanged="ListArchitectures_SelectionChanged"
+                 BorderBrush="#DDD" BorderThickness="1" Background="White"/>
+
+        <Border Grid.Row="2" Background="#E9ECEF" CornerRadius="4" Margin="0,10,0,12" Padding="8">
+            <TextBlock x:Name="TxtDescription" TextWrapping="Wrap" Foreground="#333" FontSize="12" MinHeight="30"/>
+        </Border>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="تولید ساختار و فایل‌ها" Width="140" Height="30" Margin="0,0,8,0" 
+                    Background="#0078D7" Foreground="White" FontWeight="SemiBold" 
+                    IsDefault="True" Click="BtnGenerate_Click"/>
+            <Button Content="انصراف" Width="80" Height="30" IsCancel="True" Background="#E0E0E0"/>
+        </StackPanel>
+    </Grid>
+</Window>
