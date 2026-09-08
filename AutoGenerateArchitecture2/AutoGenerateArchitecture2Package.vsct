@@ -8,7 +8,8 @@
 	<Commands package="guidAutoGenerateArchitecture2Package">
 		<Groups>
 			<Group guid="guidAutoGenerateArchitecture2PackageCmdSet" id="MyMenuGroup" priority="0x0600">
-				<Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
+				<!-- تغییر این قسمت: انتقال گروه به منوی راست‌کلیک پروژه -->
+				<Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE"/>
 			</Group>
 		</Groups>
 
