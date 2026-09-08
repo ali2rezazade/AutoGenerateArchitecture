@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/badge/.NET-Core%20%7C%208%20%7C%209-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
 
-**⚡ .NET Architecture Scaffolder** is a productivity extension for Visual Studio designed to instantly generate clean folder structures and boilerplate files for **10 popular modern software architectures** in your .NET projects.
+**⚡ .NET Architecture Generator** is a productivity extension for Visual Studio designed to instantly generate clean folder structures and boilerplate files for **10 popular modern software architectures** in your .NET projects.
 
 ---
 
