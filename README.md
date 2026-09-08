@@ -54,7 +54,7 @@
 
 1. Open your project in Visual Studio.
 2. In **Solution Explorer**, right-click on the target **Project**.
-3. Click on **`Scaffold Architecture...`**.
+3. Click on **`Apply Architecture...`**.
 4. Select your desired architecture pattern from the dialog list.
 5. Click **تولید ساختار و فایل‌ها (Generate)**.
 6. Your project folders and initial base boilerplate files are ready!
