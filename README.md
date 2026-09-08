@@ -1,4 +1,4 @@
-# 🚀 .NET Architecture Scaffolder (Visual Studio Extension)
+# 🚀 .NET Architecture Generator (Visual Studio Extension)
 
 [![Visual Studio](https://img.shields.io/badge/Visual%20Studio-2022-5C2D91?logo=visualstudio&logoColor=white)](https://visualstudio.microsoft.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
